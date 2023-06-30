@@ -2,7 +2,11 @@ module latapi
 
 go 1.20
 
-require github.com/labstack/echo/v4 v4.10.2
+require (
+	github.com/labstack/echo/v4 v4.10.2
+	gorm.io/driver/mysql v1.5.1
+	gorm.io/gorm v1.25.2
+)
 
 require (
 	github.com/go-sql-driver/mysql v1.7.1 // indirect
@@ -17,6 +21,4 @@ require (
 	golang.org/x/net v0.7.0 // indirect
 	golang.org/x/sys v0.5.0 // indirect
 	golang.org/x/text v0.7.0 // indirect
-	gorm.io/driver/mysql v1.5.1 // indirect
-	gorm.io/gorm v1.25.2 // indirect
 )
