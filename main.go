@@ -22,8 +22,8 @@ type BaseResponse struct {
 func main() {
 	e := echo.New()
 	e.GET("/news", NewsController)           // endpoint 1
-	e.GET("/news/:id", DetailNewsController) // endpoint2
-	e.POST("/news", AddNewsController)
+	e.GET("/news/:id", DetailNewsController) // endpoint 2
+	e.POST("/news", AddNewsController)       // endpoint 3
 	e.Start(":8000")
 }
 
